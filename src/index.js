@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+class App extends Component {
+  .render(
+    return (
+      <div>
+        <Song>
+        </Song>
+      </div>
+    )
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('.root'));
