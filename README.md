@@ -5,8 +5,10 @@ Built using [react-music](https://github.com/FormidableLabs/react-music)
 To install / run:  
 
   * clone / download  
+
     $ npm  
-    $ npm start
+    $ npm start  
+
   * visit your localhost:8080
   * sit back and enjoy
 

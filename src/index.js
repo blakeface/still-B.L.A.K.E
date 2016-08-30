@@ -18,47 +18,60 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Song temp={90} playing={this.state.playing}>
+        <Song temp={94} playing={this.state.playing}>
           <Sequencer resolution={16} bars={1}>
             <Sampler
               sample='/samples/kick.wav'
-              steps={[0, 2, 8, 10]}
+              steps={[0, 5, 8, 12]}
+            />
+            <Sampler
+              sample='/samples/kick.wav'
+              steps={[0, 5, 8, 12]}
             />
             <Sampler
               sample='/samples/snare.wav'
-              steps={[4, 12,13,14,15]}
+              steps={[4, 12]}
+            />
+            <Sampler
+              sample='/samples/hh.wav'
+              steps={[0, 2, 4, 6, 8, 10, 12, 14]}
+            />
+            <Sampler
+              sample='/samples/hh-open.wav'
+              steps={[2, 10]}
             />
           </Sequencer>
-          <Sequencer resolution={16} bars={2}>
+          <Sequencer resolution={8} bars={2}>
             <Synth
               type='sine'
               steps={[
-                [0, 2, ["c5", "e5", "a5"]],
-                [2, 2, ["c5", "e5", "a5"]],
-                [4, 2, ["c5", "e5", "a5"]],
-                [6, 2, ["c5", "e5", "a5"]],
-                [8, 2, ["c5", "e5", "a5"]],
-                [10, 2, ["c5", "e5", "a5"]],
-                [12, 2, ["c5", "e5", "a5"]],
-                [14, 2, ["c5", "e5", "a5"]],
-                [0, 16, []],
+                [0, 1, ["c5", "e5", "a5"]],
+                [1, 1, ["c5", "e5", "a5"]],
+                [2, 1, ["c5", "e5", "a5"]],
+                [3, 1, ["c5", "e5", "a5"]],
+                [4, 1, ["c5", "e5", "a5"]],
+                [5, 1, ["c5", "e5", "a5"]],
+                [6, 1, ["c5", "e5", "a5"]],
+                [7, 1, ["c5", "e5", "a5"]],
+                [8, 1, ["b5", "e5", "a5"]],
+                [9, 1, ["b5", "e5", "a5"]],
+                [10, 1, ["b5", "e5", "a5"]],
+                [11, 1, ["b5", "e5", "d5"]],
+                [12, 1, ["b5", "e5", "d5"]],
+                [13, 1, ["b5", "e5", "d5"]],
+                [14, 1, ["b5", "e5", "d5"]],
+                [15, 1, ["b5", "e5", "d5"]],
               ]}
             />
           </Sequencer>
-          <Sequencer resolution={16} bars={2}>
+          <Sequencer resolution={4} bars={2}>
             <Synth
-              type='sine'
+              type='square'
               steps={[
-                [0, 16, []],
-                [0, 2, ["b5", "e5", "a5"]],
-                [2, 2, ["b5", "e5", "a5"]],
-                [4, 2, ["b5", "e5", "a5"]],
-                [6, 2, ["b5", "e5", "d5"]],
-                [8, 2, ["b5", "e5", "d5"]],
-                [10, 2, ["b5", "e5", "d5"]],
-                [12, 2, ["b5", "e5", "d5"]],
-                [14, 2, ["b5", "e5", "d5"]],
-                [16, 2, ["b5", "e5", "d5"]],
+                [0, 1, "a1"],
+                [3, 1, ["e2", "e3"]],
+                [4, 1, "b1"],
+                [7, 1, ["e3", "e2"]],
               ]}
             />
           </Sequencer>
