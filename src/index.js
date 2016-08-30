@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
+import Contenct from './components/content';
 import { Song, Sequencer, Sampler, Synth } from 'react-music';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Contenct />
         <Song temp={94} playing={this.state.playing}>
           <Sequencer resolution={16} bars={1}>
             <Sampler
@@ -76,7 +78,6 @@ class App extends Component {
             />
           </Sequencer>
         </Song>
-
         <button
           type='button'
           onClick={this.handlePlayToggle}>

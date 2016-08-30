@@ -6,10 +6,8 @@ To install / run:
 
   * clone / download  
 
-    $ npm  
+    $ npm install  
     $ npm start  
 
   * visit your localhost:8080
   * sit back and enjoy
-
-#WIP
